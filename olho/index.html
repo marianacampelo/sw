@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olho</title>
+</head>
+<body class="centralizado">
+    <table id="tabela" height="500px">
+        <tr>
+            <td>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Bem vindo ao meu site do 2°F!</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/img/olho-fechado.PNG" id="imagem1" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="botaoaco">Acordar</button>
+                <button id="botaodor" disabled>Dormir</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<style>
+    .centralizado 
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    #tabela
+    {
+        text-align: center;
+    }
+</style>
+
+<script>
+    var botaoaco = document.querySelector('#botaoaco');
+    botaoaco.addEventListener('click', minhafuncaoacordar)
+    
+    var botaodor = document.querySelector('#botaodor');
+    botaodor.addEventListener('click', minhafuncaodormir)
+
+    var x = 0;
+    var y = 0;
+
+    function minhafuncaoacordar(){
+        document.getElementById("imagem1").src = "/img/olho-aberto.PNG";
+        document.getElementById("botaoaco").disabled = true;
+        document.getElementById("botaodor").disabled = false;
+        x = setInterval(abre, 100)
+        y = setInterval(fecha, 1000)
+    }
+
+    function minhafuncaodormir(){
+        document.getElementById("imagem1").src = "/img/olho-fechado.PNG";
+        document.getElementById("botaodor").disabled = true;
+        document.getElementById("botaoaco").disabled = false;
+        clearInterval(x);
+        clearInterval(y);
+    }
+
+    function abre(){
+        document.getElementById("imagem1").src = "/img/olho-aberto.PNG";
+    }
+
+    function fecha(){
+        document.getElementById("imagem1").src = "/img/olho-fechado.PNG";
+    }
+
+</script>
