@@ -1,0 +1,9 @@
+.botao{
+    width: 200px;
+    height: 30px;
+    background: linear-gradient(to right, palevioletred, purple);
+}
+
+.corpo{
+    background-color: rgb(240, 180, 200);
+}
