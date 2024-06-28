@@ -1,0 +1,25 @@
+button{
+    width: 117px;
+    height: 50px;
+    margin: 5px;
+    background-color: rgb(247, 177, 247);
+   
+}
+ 
+input{
+    text-align: right;
+    width: 632px;
+    height: 50px;
+}
+ 
+.Calculadora{
+    text-align: center;
+}
+ 
+.texto{
+    color: palevioletred;
+}
+ 
+.corpo{
+    background: linear-gradient(to right, palevioletred, purple);
+}
