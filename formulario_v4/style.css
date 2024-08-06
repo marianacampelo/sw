@@ -1,0 +1,25 @@
+.body{
+    background-color: blanchedalmond;
+}
+
+.botao{
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+    background-color: rgb(247, 177, 247);
+}
+
+input{
+    text-align: right;
+    width: 250px;
+    height: 30px;
+}
+
+.botaoCad{
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+    background-color: plum;
+}
